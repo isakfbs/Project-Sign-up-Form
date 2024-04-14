@@ -6,5 +6,61 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="logo"></div>
+      </div>
+    </header>
+    <div class="form-info">
+      <p>
+        This not a real online service! You know you need something like this in
+        your life to help you realize your deepest dreams. Sign up now to get
+        started.
+      </p>
+      <p>You know you want to.</p>
+    </div>
+    <div class="form-container">
+      <h2 class="form-title">Let's do this!</h2>
+      <form id="form" action="#" method="post">
+        <label for="first-name">
+          <span>*First name:</span>
+          <input type="text" name="first-name" id="first-name" required />
+        </label>
+
+        <label for="last-name">
+          <span>*Last name:</span>
+          <input type="text" name="last-name" id="last-name" required />
+        </label>
+
+        <label for="email">
+          <span>*Email</span>
+          <input type="text" name="email" id="email" required />
+        </label>
+
+        <label for="phone">
+          <span>Phone number:</span>
+          <input type="tel" name="phone" id="phone" />
+        </label>
+
+        <label for="password">
+          <span>*Password:</span>
+          <input type="password" name="password" id="password" />
+        </label>
+
+        <label for="confirm-password">
+          <span>*Confirm password</span>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+          />
+        </label>
+      </form>
+    </div>
+    <div class="button-container">
+      <button form="form" type="submit">Create Account</button>
+      <p>Alredy have an account?<a href="#">Log in</a></p>
+    </div>
+  </body>
 </html>

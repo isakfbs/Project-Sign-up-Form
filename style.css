@@ -3,3 +3,46 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-image: url(images/background-header.png);
+  background-size: cover;
+  background-position: 50% 20%;
+}
+
+header,
+div {
+  flex: 1 50px;
+}
+
+.form-info,
+.button-container {
+  background-color: #322f2f;
+  color: #fbf5e9;
+  text-align: center;
+  padding: 50px;
+}
+
+.form-container {
+  flex: 5;
+  background-color: #4f4b4b;
+  text-align: center;
+  color: #fbf5e9;
+  padding: 30px;
+}
+
+.form-container h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.form-container,
+#form {
+  display: flex;
+  flex-direction: column;
+}
