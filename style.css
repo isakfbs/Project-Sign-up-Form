@@ -5,6 +5,7 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* mobile styles */
 body {
   display: flex;
   flex-direction: column;
@@ -95,4 +96,61 @@ button:focus {
 a {
   color: #cfb145;
   font-weight: bold;
+}
+
+/* Desktop styles */
+
+@media only screen and (min-width: 961px) {
+  body {
+    flex-direction: row;
+  }
+
+  header {
+    flex: 1 200px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+  }
+
+  .form-info {
+    padding-right: 30%;
+    padding-left: 5%;
+    text-align: left;
+  }
+
+  .form-container {
+    padding-right: 30%;
+    padding-left: 5%;
+  }
+
+  #form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+
+  label {
+    flex-basis: 45%;
+  }
+
+  input {
+    height: 40px;
+  }
+
+  .button-container {
+    padding-right: 30%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  button {
+    width: 200px;
+    height: 50px;
+  }
 }
