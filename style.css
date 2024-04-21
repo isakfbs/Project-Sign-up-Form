@@ -71,8 +71,14 @@ label {
 }
 
 input {
+  appearance: none;
   border-radius: 5px;
   background-color: #cec093;
+}
+
+input:focus,
+input:hover {
+  border: 3px solid #215524;
 }
 
 label span {
